@@ -42,5 +42,55 @@ The user can name the output file as their wish.
 
 
 By using the same logic, the encrypted content can be changed back to the original content and saved to another output file.
+##
 
+## Use of each header files, library, objects, and loops in the program :
+**#include** is a preprocessor directive that tells the preprocessor to include header files in the program. < > indicate the start and end of the file name to be included.
+##
+**#include iostream-**        iostream is a header file that contains functions for input/output operations.
+##
+**#include string-**            To use the string data type, string header file is needed.
+##
+**#include fstream -**    fstream is required for file(input/output) processing in C++
+##
+**#include cctype -**      cctype header file declares a set of functions to classify (and transform) individual                                                         characters.
+ ##
+**using namespace std;**    std is a C++ namespace for many pieces of functionality that are provided in standard C++ libraries
+##
+**ofstream :** Stream class to write on files.
+ 
+**ifstream :** Stream class to read from files.
+##
+**cin** is an object of the input stream and is used to take input from input streams like files, console, etc.
+**cout** is an object of the output stream that is used to show output. 
+ Basically, cin is an input statement while cout is an output statement.
+
+##
+
+
+    
+      while(infile)     
+               {
+   	  for(int i =1;i<=13;i++)   
+   	 { 
+   	  if(isalpha(eachChar))        
+   	   {
+   		    if(eachChar=='Z')
+   		         eachChar='A';
+   		    
+   		    else if(eachChar=='z')
+   		         eachChar='a' ;
+   		    else
+			  eachChar++;       	
+	 }
+   	 outfile << eachChar;       
+   	 infile.get(eachChar);      
+    }
+    	infile.close();      //Closes the input file
+	outfile.close();         // Closes the output file
+     return 0;
+         }
+##
+
+The while loop **above** is used to read each and every character from the file. Then, there is a for loop to increase the counter every time. It  goes through every character in the file, checks if the character is alphabet and if it is, it replaces it with the 13th letter after the alphabet.
 
