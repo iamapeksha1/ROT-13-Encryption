@@ -5,7 +5,7 @@ A C++ program that asks the user for the name of an input file and translates th
 
 **ROT13 ("rotate by 13 places", ROT-13)** is a simple letter substitution cipher that replaces a letter with the 13th letter after it, in the alphabet.
 
-## Downloading and installing :
+## Downloading and installing C++ :
 Download Visual C++ 2017 community : A free Windows C++ compiler by Microsoft.
 
 Download DEV C++ 5.11
@@ -38,7 +38,7 @@ of the file.  By using a nested loop, it  goes through every character in the fi
 after the alphabet. After replacing each and every character and letting the numbers(if any) be as it is, it writes the output/encrypted content into an output file. 
 The user can name the output file as their wish.
 
-![picture](ROT13.jpg)
+![picture](ROT13.png)
 
 
 By using the same logic, the encrypted content can be changed back to the original content and saved to another output file.
